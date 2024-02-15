@@ -3,8 +3,7 @@ const userService = require("./userService");
 
 const app = express();
 const PORT = 3001;
-console.log("hello")
-console.log("hello1")
+console.log("hello");
 app.use(express.json());
 
 app.get("/user/:id", (req, res) => {

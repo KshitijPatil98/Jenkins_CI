@@ -5,9 +5,10 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "test": "jest --reporters=default",
-    "test-ci": "jest --ci",
-    "coverage": "jest --coverage"
+    "lint": "./node_modules/.bin/eslint ./",
+    "test": "./node_modules/.bin/jest --reporters=default",
+    "test-ci": "./node_modules/.bin/jest --ci",
+    "coverage": "./node_modules/.bin/jest --coverage"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
